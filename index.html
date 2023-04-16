@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Antonio's Calculator</title>
+</head>
+
+<body>
+    
+    <div id="cover">
+
+        <h1>
+            Welcome to Antonio's Calculator
+        </h1>
+
+        <p>
+            A smooth, simple, and functional WebApp by a Mexican Jr Developer   
+        </p>
+
+        <button onClick="hideCover()">
+            Try it!
+        </button>
+
+    </div>
+
+    <div id="container" class="blur">
+        <div id="numbers">
+            <textarea id="user" cols="30" rows="10" maxlength="20" disabled></textarea>
+            <textarea id="result" cols="30" rows="10" maxlength="12" disabled>0</textarea>
+        </div>
+
+
+        <div id="functions">
+            <div id="div1">
+                <input type="button" class="btn" id="showResult" value=" = ">
+            </div>
+            <div id="div2">
+                <input type="button" class="btn" value=" √ " onClick="calculate('Math.sqrt(')">
+            </div>
+            <div id="div3">
+                <input type="button" class="btn" id="clear" value=" CE ">
+            </div>
+            <div id="div4">
+                <input type="button" class="btn" value=" Del " onClick="erase()">
+            </div>
+            <div id="div5">
+                <input type="button" class="btn" value=" &#247; " onClick="calculate('/')">
+            </div>
+            <div id="div6">
+                <input type="button" class="btn" value=" x¹ " onClick="calculate('Math.pow(')">
+            </div>
+            <div id="div7">
+                <input type="button" class="btn" value=" ( " onClick="calculate('(')">
+            </div>
+            <div id="div8">
+                <input type="button" class="btn" value=" ) " onClick="calculate(')')">
+            </div>
+            <div id="div9">
+                <input type="button" class="btn" value=" &#215; " onClick="calculate('*')">
+            </div>
+            <div id="div10">
+                <input type="button" class="btn" value=" 1 " onClick="calculate('1')">
+            </div>
+            <div id="div11">
+                <input type="button" class="btn" value=" 2 " onClick="calculate('2')">
+            </div>
+            <div id="div12">
+                <input type="button" class="btn" value=" 3 " onClick="calculate('3')">
+            </div>
+            <div id="div13">
+                <input type="button" class="btn" value=" - " onClick="calculate('-')">
+            </div>
+            <div id="div14">
+                <input type="button" class="btn" value=" 4 " onClick="calculate('4')">
+            </div>
+            <div id="div15">
+                <input type="button" class="btn" value=" 5 " onClick="calculate('5')">
+            </div>
+            <div id="div16">
+                <input type="button" class="btn" value=" 6 " onClick="calculate('6')">
+            </div>
+            <div id="div17">
+                <input type="button" class="btn" value=" + " onClick="calculate('+')">
+            </div>
+            <div id="div18">
+                <input type="button" class="btn" value=" 7 " onClick="calculate('7')">
+            </div>
+            <div id="div19">
+                <input type="button" class="btn" value=" 8 " onClick="calculate('8')">
+            </div>
+            <div id="div20">
+                <input type="button" class="btn" value=" 9 " onClick="calculate('9')">
+            </div>
+            <div id="div21">
+                <input type="button" class="btn" value=" +/- " onClick="calculate('+-')">
+            </div>
+            <div id="div22">
+                <input type="button" class="btn" value=" 0 " onClick="calculate('0')">
+            </div>
+            <div id="div23">
+                <input type="button" class="btn" value=" . " onClick="calculate('.')">
+            </div>
+        </div>
+        
+        <footer>
+            Linkedin &#8594; Antonio Guerrero Gil &#8592; Github
+            
+        </footer>
+
+    </div>
+    
+<script src="scripts/script.js"></script>
+
+</body>
+
+</html>
