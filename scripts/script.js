@@ -21,11 +21,19 @@ const calculation = document.getElementById("user");
 function calculate(num){
     calculation.textContent += num;
     console.log(num);
+    if(calculation.textContent==21091999){
+        alert("FELICIDADES, ENCONTRASTE UN EASTER EGG");
+    }
 }
 
 function erase(){
     let newString = calculation.textContent;
     calculation.textContent =  newString.slice(0,-1);
+}
+
+function negative(){
+    let value = calculation.textContent;
+    calculation.textContent = value*-1;
 }
 
 document.getElementById("clear").addEventListener("click", function(){
@@ -36,5 +44,9 @@ document.getElementById("clear").addEventListener("click", function(){
 document.getElementById("showResult").addEventListener("click", function () {
     var exp = calculation.textContent;
     result.textContent = eval(exp);
-    calculation.textContent = result.textContent;
+    calculation.textContent = "";
+    if(result.textContent == NaN || result.textContent == Infinity){
+        result.textContent = "Operación no válida"
+        calculation.textContent = "Operación no válida"
+    }
   });

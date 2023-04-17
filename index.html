@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <title>Antonio's Calculator</title>
 </head>
 
@@ -29,8 +32,8 @@
 
     <div id="container" class="blur">
         <div id="numbers">
-            <textarea id="user" cols="30" rows="10" maxlength="20" disabled></textarea>
-            <textarea id="result" cols="30" rows="10" maxlength="12" disabled>0</textarea>
+            <textarea id="user" cols="30" rows="2" maxlength="30" disabled></textarea>
+            <textarea id="result" cols="30" rows="2" maxlength="30" disabled >0</textarea>
         </div>
 
 
@@ -51,7 +54,7 @@
                 <input type="button" class="btn" value=" &#247; " onClick="calculate('/')">
             </div>
             <div id="div6">
-                <input type="button" class="btn" value=" x¹ " onClick="calculate('Math.pow(')">
+                <input type="button" class="btn" value=" x¹ " onClick="calculate('**')">
             </div>
             <div id="div7">
                 <input type="button" class="btn" value=" ( " onClick="calculate('(')">
@@ -96,7 +99,7 @@
                 <input type="button" class="btn" value=" 9 " onClick="calculate('9')">
             </div>
             <div id="div21">
-                <input type="button" class="btn" value=" +/- " onClick="calculate('+-')">
+                <input type="button" class="btn" value=" +/- " onClick="negative()">
             </div>
             <div id="div22">
                 <input type="button" class="btn" value=" 0 " onClick="calculate('0')">
@@ -107,8 +110,13 @@
         </div>
         
         <footer>
-            Linkedin &#8594; Antonio Guerrero Gil &#8592; Github
-            
+            <a href="https://www.linkedin.com/in/guerrero-gil-antonio-0921/" target="_blank">
+            Linkedin 
+            </a> 
+            &#8594; Antonio Guerrero Gil &#8592;
+            <a href="https://github.com/AntonioG-G">
+            Github
+            </a>
         </footer>
 
     </div>

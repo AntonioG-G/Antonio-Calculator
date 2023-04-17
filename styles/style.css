@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+body{
+    background-color: #EEB868;
+}
+
 #cover{
     background: rgba(73, 80, 87, 0.5);
-    
+    background-image: url(/math.png) ;
     position: fixed;
     top: 0;
     right: 0;
@@ -20,8 +24,39 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fbfbfb, 0 0 1em #fbfbff, 0 0 0.2em #fbfbfb;
 }
 
+#cover button{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 29px;
+    text-align: center;
+    box-shadow:inset 0px 1px 0px 0px #efdcfb;
+	background:linear-gradient(to bottom, #fbfbfb 5%, #d4d4d4 100%);
+	background-color:#fbfbfb;
+	border-radius:6px;
+	border:1px solid #495057;
+	display:inline-block;
+	cursor:pointer;
+	color:#495057;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #dbdbdb;
+}
+
+#cover button:hover {
+	background:linear-gradient(to bottom, #d4d4d4 5%, #fbfbfb 100%);
+	background-color:#fbfbfb;
+    transform: scale(1.25);
+}
+#cover button:active {
+	position:relative;
+	top: 3px;
+}
 #cover.oculto {
     animation-duration: 2s;
     animation-name: hide;
@@ -48,10 +83,11 @@
 
 #container{
     
-    height: 700px;
+    height: 550px;
     width: 60%;
     margin: 3% auto 3% auto;
-    background: rgba(251, 251, 251, 1);
+    background: #fbfbfb;
+    border-radius: 23px;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -74,6 +110,18 @@
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+#numbers textarea{
+    text-align: end;
+    border: 0;
+    resize: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 27px;
+    align-self: center;
+    width: 90%;
+    
 }
 
 #functions{
@@ -83,7 +131,9 @@
     grid-template-rows: repeat(6, 40px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    padding: 3%;
 }
+
 
 #div1 { grid-area: 5 / 4 / 7 / 5; }
 #div2 { grid-area: 1 / 1 / 2 / 2; }
@@ -112,16 +162,38 @@
 .btn{
     height: 100%;
     width: 100%;
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 22px;
+    text-align: center;
+
+    background: #119da4;
+    color: #fbfbfb;
 }
+
+.btn:hover{
+    background: #de2b2b;
+    color: #fbfbfb;
+    transition: all 0.5s linear;
+}
+
+
 
 footer{
 
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: red;
-    height: 30px;
+    background-color: #de2b2b;
+    height: 50px;
     width: 100%;
+
     text-align: center;
- 
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 32px;
+    color: #fbfbfb;
+}
+
+a{
+    color: #fbfbfb;
 }
