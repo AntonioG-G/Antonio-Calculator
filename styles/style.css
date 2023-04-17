@@ -197,3 +197,39 @@ footer{
 a{
     color: #fbfbfb;
 }
+
+@media screen and (max-width: 768px) {
+    footer{
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: #de2b2b;
+        height: 50px;
+        width: 100%;
+    
+        text-align: center;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-size: 26px;
+        color: #fbfbfb;
+    }
+    #container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer{
+
+        text-align: center;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-size: 20px;
+        color: #fbfbfb;
+    }
+    footer::before{
+        content: <a href='https://www.linkedin.com/in/guerrero-gil-antonio-0921/' target='_blank'>Linkedin</a> <a href='https://github.com/AntonioG-G'>Github</a>;
+    }
+    #container{
+        width: 75%;
+    }
+}
